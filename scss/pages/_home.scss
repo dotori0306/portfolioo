@@ -1,0 +1,155 @@
+
+.sc-visual{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // overflow: hidden;
+    margin-bottom: 180px;
+
+    .inner{pointer-events: none;}
+
+    .bg-area{
+        width: 100vw;height: 100vw;
+        background: radial-gradient(circle farthest-corner at 50% 50%, #000 38%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg.gif);
+        // position: fixed;
+        position: absolute;
+        top: 0;left: 0;
+        // top: -130%;left: -70%;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .title{
+        font-size: 130px;
+        font-family: $font-eng;
+        text-align: center;
+        pointer-events: none;
+        white-space: nowrap;
+
+        .txt{display: block;}
+        
+        span:not(.txt){
+            font-size: 170px;
+        }
+    }
+}
+
+
+
+
+.sc-works{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .grid-area{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        
+        .grid{
+            border: #fff;
+            border-style: solid;
+            border-width: 1px;
+            height: 72px;
+        }
+
+        .cont{
+            height: 100%;
+            overflow: hidden;
+
+            img{
+                width: 100%;height: 100%;
+                object-fit: cover;
+                transition: 0.3s;
+                cursor: none;
+            }
+
+            .img-wrap{
+                position: relative;
+                border: 1px solid #fff;
+                box-sizing: border-box;
+                height: 100%;
+
+                &::after{
+                    content: '';
+                    background: url(../img/arrow.svg) no-repeat center;
+                    width: 26px;height: 38px;
+                    position: absolute;
+                    bottom: 10px;right: 20px;
+                    transition: .5s;
+                }
+
+                &:hover::after{transform: rotate(360deg);}
+            }
+
+            a{height: 100%;display: block;}
+
+            &:hover{
+                img{transform: scale(1.1);}
+            }
+
+        }
+        
+        .andar{
+            grid-column-start: span 5;
+            grid-column-end: span 7;
+            grid-row-start: span 5;
+            grid-row-end: span 6;
+        }
+
+        .cityhall{
+            grid-column-start: span 5;
+            grid-row-start: span 5;
+        }
+
+        .nb{
+            grid-column-start: span 7;
+            grid-row-start: span 11;
+        }
+
+        .bm{
+            grid-column-start: span 6;
+            grid-row-start: span 5;
+        }
+
+        .toss{
+            grid-column-start: span 6;
+            grid-row-start: span 5;
+        }
+
+        .imdak{
+            grid-column-start: span 6;
+            grid-row-start: span 11;
+
+        }
+    }
+
+    .bg-area-blue{
+        background:radial-gradient(#000 30%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg2.gif);
+        width: 130px;
+        height: 130px;
+        border-radius: 50%; 
+        color: #fff;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;left: 0;
+        font-family: $font-eng;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .bg-area-big-blue{
+        background:radial-gradient(#000 55%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg2.gif);
+        width: 1000px;height: 1000px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -10%;right:-5%;
+        z-index: -10;
+    }
+}

@@ -1,0 +1,39 @@
+.footer{
+
+    .contact-area{
+        width: 100%;
+        font-size: 45px;
+        overflow: hidden;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .contact-wrap{
+        width: 3840px;
+        display: flex;
+    }
+
+    .contact-list{
+        display: flex;
+        width: 1920px;
+        height: 60px;
+        text-align: center;
+        
+        .link-active{font-family: $font-eng;font-size: 47px;}
+
+        &>a{
+            transform: translate3d(0, -40px, 0);
+            transition: 0.2s;
+            transform-style: preserve-3d;
+
+            &:hover{
+                transform: translate3d(0, 16px, 0);
+            }
+        }
+    }
+
+    a+a{margin-left: 60px;}
+
+    .copyright{padding: 0 50px 20px;font-size: 10px;}
+    
+}
