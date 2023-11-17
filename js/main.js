@@ -67,6 +67,9 @@ $('.sc-visual').mousemove(function(e){
   //   })
   // })
 
+  $('.cont a').hover(function(e){
+    $(this).toggleClass('on');
+  })
 
   $('.cont').mousemove(function(e){
     gsap.to('.bg-area-blue',{
