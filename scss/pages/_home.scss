@@ -53,7 +53,7 @@
             border: #fff;
             border-style: solid;
             border-width: 1px;
-            height: 72px;
+            height: 76px;
         }
 
         .cont{
@@ -153,6 +153,10 @@
             grid-row-start: span 9;
         }
         .toss{
+            grid-column-start: span 5;
+            grid-row-start: span 4;
+        }
+        .bm{
             grid-column-start: span 5;
             grid-row-start: span 4;
         }
