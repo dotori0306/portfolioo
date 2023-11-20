@@ -390,6 +390,10 @@ header .menu-area > a:hover {
   grid-column-start: span 5;
   grid-row-start: span 4;
 }
+.sc-works .grid-area .bm {
+  grid-column-start: span 5;
+  grid-row-start: span 4;
+}
 .sc-works .grid-area .mobile {
   grid-column-start: span 5;
   grid-row-start: span 5;
