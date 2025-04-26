@@ -111,7 +111,7 @@ $('.sc-visual').mousemove(function(e){
 
 
 
-
+  //footer
   slideLoop = gsap.to('.contact-wrap',15,{
     xPercent:-50,
     repeat:-1,
@@ -122,16 +122,6 @@ $('.sc-visual').mousemove(function(e){
   
   slideLoop.play()
 
-
-
-
-  //footer
-
-  mailslideLoop = gsap.to('.link-area',2,{
-    xPercent:-50,
-    repeat:-1,
-    ease:'none'
-  })
   
   // mailslideLoop paused();
 
