@@ -59,13 +59,17 @@ $('.sc-visual').mousemove(function(e){
 
 
   $('.sc-works').mousemove(function(e){
-
-    gsap.to('.bg-area-blue',{
-      x: e.pageX - 200,
-      y: e.pageY - 200,
+  const areaOffset = $(this).offset();
+  const posX = e.pageX - areaOffset.left;
+  const posY = e.pageY - areaOffset.top;
+  
+    gsap.to('.bg-area-blue', {
+      x: posX - 200,
+      y: posY - 200,
       duration: 0.3,
-    })
-  })
+      ease: "power3.out"
+    });
+});
 
 
   $('[data-fade]').each(function(){
