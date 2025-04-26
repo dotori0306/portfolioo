@@ -63,8 +63,7 @@ $('.sc-visual').mousemove(function(e){
     gsap.to('.bg-area-blue',{
       x: e.clientX - 200,
       y: e.clientY - 200,
-      duration: 0.3,
-      ease: "power3.out"
+      duration: 1,
     })
   })
 
