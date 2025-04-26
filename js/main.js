@@ -58,33 +58,12 @@ $('.sc-visual').mousemove(function(e){
   })
 
 
-  // $('.sc-works').mousemove(function(e){
+  $('.sc-works').mousemove(function(e){
 
-  //   gsap.to('.bg-area-blue',{
-  //     x:e.offsetX-200,
-  //     y:e.offsetY-200,
-  //     duration: 1,
-  //   })
-  // })
-
-  $('.cont a').hover(function(e){
-    $(this).toggleClass('on');
-  })
-
-  $('.cont').mousemove(function(e){
     gsap.to('.bg-area-blue',{
-      x:e.clientX-50,
-      y:e.clientY-50,
-      opacity:1,
-      scale:1,
-      duration:0.3,
-    })
-  })
-
-  $('.cont').mouseleave(function(e){
-    gsap.to('.bg-area-blue',{
-      scale:0,
-      opacity:0,
+      x:e.offsetX-200,
+      y:e.offsetY-200,
+      duration: 1,
     })
   })
 
@@ -122,6 +101,15 @@ $('.sc-visual').mousemove(function(e){
   
   slideLoop.play()
 
+
+
+
+
+  // mailslideLoop = gsap.to('.link-area',2,{
+  //   xPercent:-50,
+  //   repeat:-1,
+  //   ease:'none'
+  // })
   
   // mailslideLoop paused();
 
