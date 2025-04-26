@@ -66,7 +66,7 @@ $('.sc-visual').mousemove(function(e){
     gsap.to('.bg-area-blue', {
       x: posX - 200,
       y: posY - 200,
-      duration: 0.3,
+      duration: 1,
       ease: "power3.out"
     });
 });
