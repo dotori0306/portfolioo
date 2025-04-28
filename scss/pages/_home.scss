@@ -63,8 +63,6 @@
             img{
                 width: 100%;height: 100%;
                 object-fit: cover;
-                transition: 0.3s;
-                cursor: none;
             }
 
             .img-wrap{
@@ -72,123 +70,66 @@
                 border: 1px solid #fff;
                 box-sizing: border-box;
                 height: 100%;
-
-                &::after{
-                    content: '';
-                    background: url(../img/arrow.svg) no-repeat center;
-                    width: 26px;height: 38px;
-                    position: absolute;
-                    bottom: 10px;right: 20px;
-                    transition: .5s;
-                    z-index: 1;
-                }
-                
             }
 
             a{
                 height: 100%;display: block;
-
-                .txt-wrap{
-                    position: absolute;
-                    top: 0;left: 0;
-                    font-size: 20px;
-                    flex-direction: column;
-                    justify-content: center;
-                    opacity: 0;
-                    padding: 50px;
-                    transform: scale(.9);
-                    transition: .3s;
-                    z-index: 1;
-                    
-                    p{font-family: 'Pretendard';color: #fff;font-style: italic;line-height: 25px;}
-                }
-                &:hover{
-                    &.on{
-                        .txt-wrap{opacity: 1;transform: scale(1);}
-                        &::after{
-                            content: '';
-                            position: absolute;
-                            top: 0;left: 0;
-                            width: 100%;height: 100%;
-                            background: rgb(0 0 0 / 85%);
-                        }
-                        .img-wrap{
-                            &::after{transform: rotate(360deg);}
-                        }
-                    }
-                }
             }
-           
-
         }
-        
-        .pass{
+        .andar{
             grid-column-start: span 5;
             grid-column-end: span 7;
             grid-row-start: span 5;
             grid-row-end: span 6;
         }
-
-        .promote{
+        .cityhall{
             grid-column-start: span 5;
             grid-row-start: span 5;
         }
-        .event{
-            grid-column-start: span 5;
-            grid-row-start: span 5;
-        }
-
-        .parallax{
-            grid-column-start: span 5;
-            grid-row-start: span 5;
-        }
-
-        .full{
-            grid-column-start: span 5;
-            grid-row-start: span 5;
-        }
-
         .nb{
-            grid-column-start: span 5;
-            grid-row-start: span 9;
-        }
-        .toss{
-            grid-column-start: span 5;
-            grid-row-start: span 4;
+            grid-column-start: span 7;
+            grid-row-start: span 11;
         }
         .bm{
-            grid-column-start: span 5;
-            grid-row-start: span 4;
-        }
-        .mobile{
-            grid-column-start: span 5;
+            grid-column-start: span 6;
             grid-row-start: span 5;
+        }
+
+        .toss{
+            grid-column-start: span 6;
+            grid-row-start: span 5;
+        }
+
+        .imdak{
+            grid-column-start: span 6;
+            grid-row-start: span 11;
         }
     }
 
     .bg-area-blue{
-        background:radial-gradient(#000 30%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg2.gif);
-        width: 130px;
-        height: 130px;
-        border-radius: 50%; 
+        background:radial-gradient(#000 40%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg2.gif);
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
         color: #fff;
-        font-size: 17px;
+        font-size: 35px;
+        z-index: -3;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: fixed;
+        position: absolute;
         top: 0;left: 0;
         font-family: $font-eng;
-        pointer-events: none;
-        opacity: 0;
     }
 
     .bg-area-big-blue{
-        background:radial-gradient(#000 55%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg2.gif);
-        width: 1000px;height: 1000px;
+        background: radial-gradient(#000 55%, rgba(0, 81, 139, 0) 74%), url(../img/sc-bg2.gif);
+        width: 1000px;
+        height: 1000px;
         border-radius: 50%;
         position: absolute;
-        bottom: -10%;right:-5%;
+        bottom: -10%;
+        right: -5%;
         z-index: -10;
     }
 }
