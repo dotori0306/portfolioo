@@ -11,3 +11,17 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: .5rem 1rem;
+  z-index: 1000;
+
+    &:focus-visible {
+      left: 0;
+    }
+}
+
