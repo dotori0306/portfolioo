@@ -14,6 +14,20 @@
           box-sizing: border-box;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: .5rem 1rem;
+  z-index: 1000;
+}
+
+.skip-link:focus-visible {
+    left: 0;
+}
+
 body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
   margin: 0;
   padding: 0;
