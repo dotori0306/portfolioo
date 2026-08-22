@@ -129,6 +129,7 @@ body {
   width: 100%;
   font-size: 45px;
   overflow: hidden;
+  align-items: center;
   margin: 50px 0;
 }
 .footer .contact-wrap {
@@ -359,7 +360,6 @@ header .menu-area > a:hover {
 
 .sc-motion {
   padding: 100px 0;
-  overflow: hidden;
 }
 .sc-motion .motion-wrap {
   position: relative;
